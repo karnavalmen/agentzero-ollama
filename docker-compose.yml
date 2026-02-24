@@ -27,8 +27,9 @@ services:
     environment:
       - OPENAI_BASE_URL=http://ollama:11434/v1
       - OPENAI_API_KEY=ollama
-      - OPENAI_MODEL=${OLLAMA_MODEL:-qwen2.5:7b-instruct}
+      - OPENAI_MODEL=${OLLAMA_MODEL}
       - TZ=Europe/Sofia
 
 volumes:
   ollama:
+
